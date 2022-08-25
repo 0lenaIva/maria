@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;900&display=swap');
+body{
+	font-family: 'Roboto Slab', serif;
+	font-size:25px;
+}
+header{
+	padding:25px 25px;
+	background-image:url("https://assets.weforum.org/article/image/Mg3mkTPk21cznwxI9GOgqJCatFJrA8CIW749SWRQ4Dc.jpg");
+	background-size:cover;
+}
+nav{
+	display:flex;
+	justify-content:space-evenly;
+	flex-wrap:wrap;
+	padding:35px;
+	border-bottom:3px solid white;
+	border-top:3px solid white;
+}
+nav a{
+	text-decoration:none;
+	color:white;
+	padding:10px 20px;
+	font-size:30px;
+	font-weight:bolt;
+}
+nav a:hover{
+	padding:8.5px 20px;
+	border-top:1.5px solid white;
+
+}
+header h1{
+	font-size:150px;
+	color:white;
+	text-align:center;
+	padding:25px 25px 10px 25px;
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 0.8em;
+	text-shadow:0 0 7px #A6C3D7 ;
+	animation-name:header;
+	animation-duration:10s;
+	animation-delay:3s;
+	animation-iteration-count:1;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+.artist{
+	padding:10px;
+}
+.info{
+	display:flex;
+	align-items:center;
+}
+.portret img{
+	width:300px;
+}
+.portret{
+	padding:15px;
+}
+.gallery{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	padding:150px 0;
+}
+.gallery img{
+	height:250px;	
+	position:relative;
+
+}
+.gallery img:hover .gallery{
+	padding:50px 0;
+}
+.gallery img:hover{
+	transform:scale(1.5);
+	transition-duration:3s;
+	z-index:4;
+	
+}
+
+.image p{
+	font-weight:bold;
+	position:absolute;
+	opacity:0;
+	color:white;
+
+}
+.image:hover p{
+	opacity:1;
+	z-index:5;
+	
+	
+}
+@keyframes header{
+	from{}
+	to{
+		opacity:1;
+	}
+}
